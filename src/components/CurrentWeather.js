@@ -58,6 +58,7 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
         const data = await response.json();
         console.log("RESPONSE JSON DATA", data);
         setWeather(data);
+        setError(false)
         setWeatherActive(true);
       } catch (error) {}
     };
@@ -109,6 +110,7 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
           <div className="error_message">{errorMessage}</div>
         ) : (
           <React.Fragment>
+          
             {typeof weather.main != "undefined" ? (
               <div>
                 <div className="location_box">
@@ -141,6 +143,7 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
             ) : (
               ""
             )}
+            
           </React.Fragment>
         )}
       </div>

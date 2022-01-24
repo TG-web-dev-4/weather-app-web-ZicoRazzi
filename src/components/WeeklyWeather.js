@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import CurrentWeatherStyles from "./CurrentWeatherStyles";
+import React from "react";
 import AccordionComp from "./AccordionComp";
 import dateBuilderAccordion from "./DateBuilderAccordion";
 import styled from "styled-components";
