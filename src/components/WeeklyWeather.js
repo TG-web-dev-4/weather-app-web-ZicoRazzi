@@ -14,6 +14,18 @@ const WeeklyWeatherStyle = styled.div`
   transition: 0.3s ease-out;
   border: 1px solid #fff;
   padding: 25px;
+ 
+  @media only screen and (max-width: 321px) {
+    .weather_container {
+      margin: 0 auto;
+      width: 90%;
+      min-height: 620px;
+      padding: 0px;
+    }
+    button {
+      left: 100px;
+    }
+  }
 `;
 
 export default function WeeklyWeather({ weather, weatherDetails }) {
@@ -21,15 +33,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
 
   return (
     <WeeklyWeatherStyle>
-      <div
-        className={
-          typeof weather.main != "undefined"
-            ? weather.main.temp > 16
-              ? "weather_container warm"
-              : "weather_container"
-            : "weather_container"
-        }
-      >
+      <div className="weather_container">
         <AccordionComp
           today={dateBuilderAccordion(new Date())}
           src={`https://openweathermap.org/img/wn/${weatherDetails.daily[0].weather[0].icon}.png`}

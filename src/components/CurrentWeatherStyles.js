@@ -13,6 +13,7 @@ const CurrentWeatherStyles = styled.div`
     transition: 0.3s ease-out;
     border: 1px solid #fff;
     padding: 25px;
+   
   }
   .weather_container.warm {
     background-image: url(${Warm});
@@ -85,20 +86,7 @@ const CurrentWeatherStyles = styled.div`
     font-weight: 700;
     text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   }
-  .front_flip_btn{
-    width: 120px;
-    border-radius: 20px;
-    font-size: 14px;
-    padding: 8px;
-    background: none;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 2px 3px rgba(50, 50, 70, 0.5);
-    transition: .3s ease;
-    color: #fff;
-    margin-top: 20px;
-    cursor: pointer;
-  }
+  
   .error_message{
     width: 100%;
     display: block;
@@ -120,6 +108,20 @@ const CurrentWeatherStyles = styled.div`
 
     margin-top: 10px;
     transition: 0.4s ease;
+  }
+
+  @media only screen and (max-width: 321px) {
+    .weather_container {
+    width: 300px;
+    min-height: 620px;
+    }
+    .weather{
+      font-size: 30px;
+    }
+    .temp{
+      margin: 10px auto;
+      font-size: 80px;
+    }
   }
 `;
 

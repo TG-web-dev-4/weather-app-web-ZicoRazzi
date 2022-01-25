@@ -5,6 +5,7 @@ import CurrentWeather from "./CurrentWeather";
 import WeeklyWeather from "./WeeklyWeather";
 
 const FlipButtonStyles = styled.button`
+
   position: relative;
   z-index: 10;
   left: 140px;
@@ -21,7 +22,17 @@ const FlipButtonStyles = styled.button`
   color: #fff;
   margin-top: 20px;
   cursor: pointer;
+
+  
+  @media only screen and (max-width: 321px) {
+    left: 88px;
+    margin-top: 20px;
+    .back-flip-button{
+      left: 140px;
+    }
+  }
 `;
+
 
 export default function CardFlip() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -62,7 +73,7 @@ export default function CardFlip() {
           />
         )}
 
-        <FlipButtonStyles className="front-flip-button" onClick={handleClick}>
+        <FlipButtonStyles className="back-flip-button" onClick={handleClick}>
           weather today
         </FlipButtonStyles>
       </>

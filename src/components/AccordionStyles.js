@@ -49,6 +49,10 @@ const AccordionStyles = styled.div`
     max-height: 0;
     transition: max-height .5s ease;
   }
+  @media only screen and (max-width: 321px) {
+   
+    
+  }
 `;
 
 export default AccordionStyles;

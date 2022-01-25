@@ -38,7 +38,7 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
   // }, [query]);
 
   //ASYNC
-
+  //
   useEffect(() => {
     const fetchData = async () => {
       try {
