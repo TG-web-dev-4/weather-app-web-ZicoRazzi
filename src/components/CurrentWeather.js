@@ -91,11 +91,12 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
     <CurrentWeatherStyles>
       <div
         className={
-          typeof weather.main != "undefined"
-            ? weather.main.temp > 16
-              ? "weather_container warm"
-              : "weather_container"
-            : "weather_container"
+          weather?.main?.temp > 16 ? "weather_container warm" : "weather_container"
+          // typeof weather.main != "undefined"
+          //   ? weather.main.temp > 16
+          //     ? "weather_container warm"
+          //     : "weather_container"
+          //   : "weather_container"
         }
       >
         <input
