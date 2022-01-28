@@ -72,7 +72,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
           today={dateBuilderAccordion(
             new Date(weatherDetails.daily[3].dt * 1000)
           )}
-          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[1].weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[3].weather[0].icon}.png`}
           min_temp={Math.round(weatherDetails.daily[3].temp.min - 273)}
           max_temp={Math.round(weatherDetails.daily[3].temp.max - 273)}
           morning_temp={Math.round(weatherDetails.daily[3].temp.morn - 273)}
@@ -84,7 +84,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
           today={dateBuilderAccordion(
             new Date(weatherDetails.daily[4].dt * 1000)
           )}
-          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[1].weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[4].weather[0].icon}.png`}
           min_temp={Math.round(weatherDetails.daily[4].temp.min - 273)}
           max_temp={Math.round(weatherDetails.daily[4].temp.max - 273)}
           morning_temp={Math.round(weatherDetails.daily[4].temp.morn - 273)}
@@ -96,7 +96,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
           today={dateBuilderAccordion(
             new Date(weatherDetails.daily[5].dt * 1000)
           )}
-          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[1].weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[5].weather[0].icon}.png`}
           min_temp={Math.round(weatherDetails.daily[5].temp.min - 273)}
           max_temp={Math.round(weatherDetails.daily[5].temp.max - 273)}
           morning_temp={Math.round(weatherDetails.daily[5].temp.morn - 273)}
@@ -108,7 +108,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
           today={dateBuilderAccordion(
             new Date(weatherDetails.daily[6].dt * 1000)
           )}
-          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[1].weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[6].weather[0].icon}.png`}
           min_temp={Math.round(weatherDetails.daily[6].temp.min - 273)}
           max_temp={Math.round(weatherDetails.daily[6].temp.max - 273)}
           morning_temp={Math.round(weatherDetails.daily[6].temp.morn - 273)}
@@ -120,7 +120,7 @@ export default function WeeklyWeather({ weather, weatherDetails }) {
           today={dateBuilderAccordion(
             new Date(weatherDetails.daily[7].dt * 1000)
           )}
-          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[1].weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${weatherDetails.daily[7].weather[0].icon}.png`}
           min_temp={Math.round(weatherDetails.daily[7].temp.min - 273)}
           max_temp={Math.round(weatherDetails.daily[7].temp.max - 273)}
           morning_temp={Math.round(weatherDetails.daily[7].temp.morn - 273)}

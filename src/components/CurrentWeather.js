@@ -45,18 +45,18 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
         const response = await fetch(
           `${API_BASE_URL}weather?q=${query}&units=metric&APPID=${API_KEY}`
         );
-        console.log("RESPONSE DATA", response);
+        // console.log("RESPONSE DATA", response);
 
         if (response.status === 404) {
           const errorCode = `City: ${query} ${response.statusText}`;
           setError(true);
           setErrorMessage(errorCode);
-          console.log("ERROR", errorCode);
+          // console.log("ERROR", errorCode);
           return;
         }
 
         const data = await response.json();
-        console.log("RESPONSE JSON DATA", data);
+        
         setWeather(data);
         setError(false)
         setWeatherActive(true);

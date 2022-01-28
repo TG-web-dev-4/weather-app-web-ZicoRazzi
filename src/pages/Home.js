@@ -22,10 +22,6 @@ export default function Home() {
   return (
     <CurrentWeatherStyles>
       <CardFlip />
-      
-      {/* <CurrentWeather />
-      <CurrentWeather /> */}
-     
     </CurrentWeatherStyles>
   )
 }
