@@ -1,9 +1,12 @@
 import CurrentWeatherStyles from "./CurrentWeatherStyles";
 import dateBuilder from "./DateBuilder";
 import React, { useState, useEffect } from "react";
-import { API_KEY, API_BASE_URL } from "../apis/config";
+import { API_BASE_URL } from "../apis/config";
 
 export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
+  const API_KEY = process.env.REACT_APP_API_KEY;
+
+ 
   const [query, setQuery] = useState();
   const [input, setInput] = useState("");
 
@@ -74,7 +77,7 @@ export default function CurrentWeather({ weatherDetails, setWeatherDetails }) {
 
       try {
         const response = await fetch(
-          `${API_BASE_URL}onecall?lat=${lat}&lon=${lon}&exclude=${`minutely,hourly,alerts`}&appid=${API_KEY}`
+          `${API_BASE_URL}onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=metric&appid=${API_KEY}`
         );
         const result = await response.json();
         setWeatherDetails(result);
