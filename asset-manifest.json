@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/js/main.7dad5146.js",
-    "static/media/forecast-bg.png": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/media/forecast-bg.267922393e1d9a51eda9.png",
-    "static/media/warm-bg.jpg": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/media/warm-bg.a7f83012aa30f33e19ee.jpg",
-    "static/media/cold-bg.jpg": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/media/cold-bg.a3f3f533d3caea133b5f.jpg",
-    "static/media/RobotoMono-Regular.ttf": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
-    "index.html": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/index.html",
-    "main.7dad5146.js.map": "/TG-web-dev-4.github.io/weather-app-web-ZicoRazzi/static/js/main.7dad5146.js.map"
+    "main.js": "/weather-app-web-ZicoRazzi/static/js/main.3b841e89.js",
+    "static/media/forecast-bg.png": "/weather-app-web-ZicoRazzi/static/media/forecast-bg.267922393e1d9a51eda9.png",
+    "static/media/warm-bg.jpg": "/weather-app-web-ZicoRazzi/static/media/warm-bg.a7f83012aa30f33e19ee.jpg",
+    "static/media/cold-bg.jpg": "/weather-app-web-ZicoRazzi/static/media/cold-bg.a3f3f533d3caea133b5f.jpg",
+    "static/media/RobotoMono-Regular.ttf": "/weather-app-web-ZicoRazzi/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
+    "index.html": "/weather-app-web-ZicoRazzi/index.html",
+    "main.3b841e89.js.map": "/weather-app-web-ZicoRazzi/static/js/main.3b841e89.js.map"
   },
   "entrypoints": [
-    "static/js/main.7dad5146.js"
+    "static/js/main.3b841e89.js"
   ]
 }
